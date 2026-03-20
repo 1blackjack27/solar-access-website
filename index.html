@@ -108,11 +108,12 @@
                     </a>
                 </nav>
 
-                <div class="flex items-center gap-4">
+                <div class="flex items-center gap-2 md:gap-4">
                     <button id="langToggleBtn"
-                        class="flex items-center gap-2 px-4 py-2 bg-primary/10 hover:bg-primary/20 rounded-lg text-sm font-bold border border-primary/20">
+                        class="flex h-11 w-11 items-center justify-center rounded-lg border border-primary/20 bg-primary/10 hover:bg-primary/20 text-sm font-bold md:h-auto md:w-auto md:gap-2 md:px-4 md:py-2"
+                        aria-label="Cambiar idioma / Change language">
                         <span class="material-symbols-outlined text-sm">language</span>
-                        <span id="langText">EN | ES</span>
+                        <span id="langText" class="hidden md:inline">EN | ES</span>
                     </button>
                     <a href="https://wa.me/1234567890?text=Hola,%20quisiera%20m%C3%A1s%20informaci%C3%B3n"
                         target="_blank"
@@ -547,8 +548,8 @@
         <!-- Footer -->
         <footer class="bg-deep-blue text-white py-20 border-t border-white/5">
             <div class="max-w-7xl mx-auto px-6 lg:px-20">
-                <div class="grid lg:grid-cols-4 gap-12 mb-16">
-                    <div class="col-span-2">
+                <div class="grid gap-10 lg:grid-cols-4 mb-16">
+                    <div class="lg:col-span-2 min-w-0">
                         <div class="flex items-center gap-2 mb-6">
                             <img alt="Solar Access Logo" class="h-10 w-auto" src="./photo_2026-03-02_15-15-23.jpg" />
                             <h2 class="text-2xl font-black uppercase tracking-tighter">Solar <span
@@ -577,7 +578,7 @@
                         </div>
                     </div>
 
-                    <div>
+                    <div class="min-w-0">
                         <h4 class="font-bold text-lg mb-6">
                             <span class="lang-es">Contacto</span><span class="lang-en">Contact</span>
                         </h4>
@@ -590,24 +591,48 @@
                                 <span class="material-symbols-outlined text-primary">call</span>
                                 <span>(305) 555-0123</span>
                             </li>
-                            <li class="flex items-center gap-3">
+                            <li class="flex items-start gap-3">
                                 <span class="material-symbols-outlined text-primary">alternate_email</span>
-                                <a class="hover:text-primary transition-colors"
-                                    href="mailto:contact@solaraccess.us">contact@solaraccess.us</a>
+                                <div class="flex flex-col gap-2">
+                                    <a class="hover:text-primary transition-colors"
+                                        href="mailto:contact@solaraccess.us">contact@solaraccess.us</a>
+                                    <div class="flex flex-wrap gap-2 text-sm">
+                                        <a class="px-3 py-1 rounded-full border border-white/10 hover:border-primary hover:text-primary transition-colors"
+                                            href="mailto:contact@solaraccess.us">Abrir en correo</a>
+                                        <a class="px-3 py-1 rounded-full border border-white/10 hover:border-primary hover:text-primary transition-colors"
+                                            href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@solaraccess.us"
+                                            target="_blank" rel="noopener noreferrer">Gmail</a>
+                                        <a class="px-3 py-1 rounded-full border border-white/10 hover:border-primary hover:text-primary transition-colors"
+                                            href="https://outlook.office.com/mail/deeplink/compose?to=contact@solaraccess.us"
+                                            target="_blank" rel="noopener noreferrer">Outlook</a>
+                                    </div>
+                                </div>
                             </li>
-                            <li class="flex items-center gap-3">
+                            <li class="flex items-start gap-3">
                                 <span class="material-symbols-outlined text-primary">alternate_email</span>
-                                <a class="hover:text-primary transition-colors"
-                                    href="mailto:info@solaraccess.us">info@solaraccess.us</a>
+                                <div class="flex flex-col gap-2">
+                                    <a class="hover:text-primary transition-colors"
+                                        href="mailto:info@solaraccess.us">info@solaraccess.us</a>
+                                    <div class="flex flex-wrap gap-2 text-sm">
+                                        <a class="px-3 py-1 rounded-full border border-white/10 hover:border-primary hover:text-primary transition-colors"
+                                            href="mailto:info@solaraccess.us">Abrir en correo</a>
+                                        <a class="px-3 py-1 rounded-full border border-white/10 hover:border-primary hover:text-primary transition-colors"
+                                            href="https://mail.google.com/mail/?view=cm&fs=1&to=info@solaraccess.us"
+                                            target="_blank" rel="noopener noreferrer">Gmail</a>
+                                        <a class="px-3 py-1 rounded-full border border-white/10 hover:border-primary hover:text-primary transition-colors"
+                                            href="https://outlook.office.com/mail/deeplink/compose?to=info@solaraccess.us"
+                                            target="_blank" rel="noopener noreferrer">Outlook</a>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
                     </div>
 
-                    <div>
+                    <div class="min-w-0">
                         <h4 class="font-bold text-lg mb-6">
                             <span class="lang-es">Sellos de Confianza</span><span class="lang-en">Trust Seals</span>
                         </h4>
-                        <div class="grid grid-cols-2 gap-4 opacity-70 hover:opacity-100 transition-opacity">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 opacity-70 hover:opacity-100 transition-opacity">
                             <div
                                 class="bg-white/5 border border-white/10 p-3 rounded-xl flex items-center justify-center h-20">
                                 <span class="text-white font-black text-center leading-tight">NABCEP<br /><span
