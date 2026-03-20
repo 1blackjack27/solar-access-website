@@ -545,6 +545,137 @@
             </div>
         </section>
 
+        <!-- Contact Form -->
+        <section class="py-24 bg-white dark:bg-background-dark border-t border-slate-200/70 dark:border-white/5"
+            id="contact-form">
+            <div class="max-w-7xl mx-auto px-6 lg:px-20">
+                <div class="grid lg:grid-cols-[0.95fr_1.05fr] gap-10 items-start">
+                    <div class="bg-deep-blue text-white rounded-[2.5rem] p-8 lg:p-10 shadow-2xl overflow-hidden relative">
+                        <div class="absolute -top-12 -right-8 w-40 h-40 rounded-full bg-primary/10 blur-3xl"></div>
+                        <div class="relative">
+                            <p class="text-primary font-bold uppercase tracking-[0.28em] text-xs mb-4">
+                                <span class="lang-es">Hablemos</span><span class="lang-en">Let's Talk</span>
+                            </p>
+                            <h3 class="text-4xl lg:text-5xl font-black leading-tight mb-5">
+                                <span class="lang-es">Solicita tu cotización sin complicaciones.</span>
+                                <span class="lang-en">Request your quote without the friction.</span>
+                            </h3>
+                            <p class="text-slate-300 text-lg leading-relaxed mb-8">
+                                <span class="lang-es">Completa el formulario y abrimos tu consulta con un mensaje
+                                    estructurado listo para enviar. Es rápido, claro y funciona mejor en celular.</span>
+                                <span class="lang-en">Fill out the form and we will open your inquiry with a
+                                    structured message ready to send. It is fast, clear, and works better on
+                                    mobile.</span>
+                            </p>
+                            <div class="space-y-4 text-slate-300">
+                                <div class="flex items-start gap-3">
+                                    <span class="material-symbols-outlined text-primary">bolt</span>
+                                    <p>
+                                        <span class="lang-es">Describe tu proyecto en menos de un minuto.</span>
+                                        <span class="lang-en">Describe your project in under a minute.</span>
+                                    </p>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <span class="material-symbols-outlined text-primary">smartphone</span>
+                                    <p>
+                                        <span class="lang-es">El mensaje se prepara para WhatsApp con todos tus
+                                            datos.</span>
+                                        <span class="lang-en">The message is prepared for WhatsApp with all your
+                                            details.</span>
+                                    </p>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <span class="material-symbols-outlined text-primary">schedule</span>
+                                    <p>
+                                        <span class="lang-es">Ideal para móviles cuando el correo no responde
+                                            bien.</span>
+                                        <span class="lang-en">Ideal for mobile when email apps do not behave
+                                            well.</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-background-light dark:bg-white/5 rounded-[2rem] p-6 lg:p-8 border border-slate-200 dark:border-white/10 shadow-xl">
+                        <form id="quoteForm" class="space-y-5">
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-bold mb-2 text-deep-blue dark:text-white" for="contactName">
+                                        <span class="lang-es">Nombre</span><span class="lang-en">Name</span>
+                                    </label>
+                                    <input id="contactName" name="name" type="text" required
+                                        class="w-full rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 px-4 py-3 text-slate-900 dark:text-white placeholder:text-slate-400 focus:border-primary focus:ring-primary"
+                                        placeholder="Jane Doe" />
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-bold mb-2 text-deep-blue dark:text-white" for="contactPhone">
+                                        <span class="lang-es">Teléfono</span><span class="lang-en">Phone</span>
+                                    </label>
+                                    <input id="contactPhone" name="phone" type="tel" required
+                                        class="w-full rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 px-4 py-3 text-slate-900 dark:text-white placeholder:text-slate-400 focus:border-primary focus:ring-primary"
+                                        placeholder="(305) 555-0123" />
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-bold mb-2 text-deep-blue dark:text-white" for="contactEmail">
+                                        <span class="lang-es">Correo electrónico</span><span class="lang-en">Email</span>
+                                    </label>
+                                    <input id="contactEmail" name="email" type="email" required
+                                        class="w-full rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 px-4 py-3 text-slate-900 dark:text-white placeholder:text-slate-400 focus:border-primary focus:ring-primary"
+                                        placeholder="name@email.com" />
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-bold mb-2 text-deep-blue dark:text-white" for="contactService">
+                                        <span class="lang-es">Servicio</span><span class="lang-en">Service</span>
+                                    </label>
+                                    <select id="contactService" name="service"
+                                        class="w-full rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 px-4 py-3 text-slate-900 dark:text-white focus:border-primary focus:ring-primary">
+                                        <option value="Solar Panels">Solar Panels</option>
+                                        <option value="Battery Storage">Battery Storage</option>
+                                        <option value="EV Charger">EV Charger</option>
+                                        <option value="Roof + Solar">Roof + Solar</option>
+                                        <option value="General Quote">General Quote</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-bold mb-2 text-deep-blue dark:text-white" for="contactMessage">
+                                    <span class="lang-es">Cuéntanos qué necesitas</span><span class="lang-en">Tell us what you need</span>
+                                </label>
+                                <textarea id="contactMessage" name="message" rows="5" required
+                                    class="w-full rounded-3xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 px-4 py-3 text-slate-900 dark:text-white placeholder:text-slate-400 focus:border-primary focus:ring-primary"
+                                    placeholder="Project details, roof type, monthly bill, timeline..."></textarea>
+                            </div>
+
+                            <div class="flex flex-col sm:flex-row gap-3">
+                                <button id="quoteFormSubmit" type="submit"
+                                    class="inline-flex items-center justify-center gap-2 rounded-2xl bg-primary px-6 py-4 font-black text-deep-blue hover:scale-[1.01] transition-transform">
+                                    <span class="material-symbols-outlined">forum</span>
+                                    <span class="lang-es">Enviar por WhatsApp</span>
+                                    <span class="lang-en">Send via WhatsApp</span>
+                                </button>
+                                <a href="mailto:contact@solaraccess.us?subject=Consulta%20desde%20Solar%20Access"
+                                    class="inline-flex items-center justify-center gap-2 rounded-2xl border border-slate-300 dark:border-white/10 px-6 py-4 font-bold text-deep-blue dark:text-white hover:border-primary hover:text-primary transition-colors">
+                                    <span class="material-symbols-outlined">alternate_email</span>
+                                    <span class="lang-es">O escríbenos por correo</span>
+                                    <span class="lang-en">Or email us directly</span>
+                                </a>
+                            </div>
+
+                            <p class="text-sm text-slate-500 dark:text-slate-400">
+                                <span class="lang-es">Tu mensaje se abrirá en WhatsApp con los datos ya organizados para enviarlo en un toque.</span>
+                                <span class="lang-en">Your message will open in WhatsApp with your details already organized for one-tap sending.</span>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Footer -->
         <footer class="bg-deep-blue text-white py-20 border-t border-white/5">
             <div class="max-w-7xl mx-auto px-6 lg:px-20">
@@ -666,6 +797,7 @@
         const billDisplay = document.getElementById('billDisplay');
         const savingsDisplay = document.getElementById('savingsDisplay');
         const roiDisplay = document.getElementById('roiDisplay');
+        const leadWaPhone = '1234567890';
 
         function updateCalculator() {
             const bill = parseInt(billSlider.value);
@@ -690,12 +822,11 @@
 
             // Actualizar Enlace de WhatsApp
             const waBtn = document.getElementById('waCalcBtn');
-            const waPhone = '1234567890'; // Número real va aquí
             const waMsg = currentLang === 'ES'
                 ? `Hola Solar Access, uso su calculadora. Mi factura es de $${bill} y me estima un ahorro de $${savings25Years.toLocaleString()} en 25 años. ¿Me ayudan con más info?`
                 : `Hello Solar Access, I just used your calculator. My bill is $${bill} and it estimates $${savings25Years.toLocaleString()} in 25-yr savings. Can I get more info?`;
 
-            waBtn.href = `https://wa.me/${waPhone}?text=${encodeURIComponent(waMsg)}`;
+            waBtn.href = `https://wa.me/${leadWaPhone}?text=${encodeURIComponent(waMsg)}`;
         }
 
         billSlider.addEventListener('input', updateCalculator);
@@ -717,6 +848,34 @@
 
             // Reejecutar calculadora para traducir variables dependientes del JS
             updateCalculator();
+        });
+
+        const quoteForm = document.getElementById('quoteForm');
+
+        quoteForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            const name = document.getElementById('contactName').value.trim();
+            const phone = document.getElementById('contactPhone').value.trim();
+            const email = document.getElementById('contactEmail').value.trim();
+            const service = document.getElementById('contactService').value;
+            const message = document.getElementById('contactMessage').value.trim();
+
+            const waMsg = currentLang === 'ES'
+                ? `Hola Solar Access, quiero solicitar una cotizacion.\n\n` +
+                `Nombre: ${name}\n` +
+                `Telefono: ${phone}\n` +
+                `Correo: ${email}\n` +
+                `Servicio: ${service}\n` +
+                `Mensaje: ${message}`
+                : `Hello Solar Access, I would like to request a quote.\n\n` +
+                `Name: ${name}\n` +
+                `Phone: ${phone}\n` +
+                `Email: ${email}\n` +
+                `Service: ${service}\n` +
+                `Message: ${message}`;
+
+            window.open(`https://wa.me/${leadWaPhone}?text=${encodeURIComponent(waMsg)}`, '_blank', 'noopener');
         });
 
         // Initialize UI State
